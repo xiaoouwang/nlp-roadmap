@@ -121,7 +121,7 @@ If you would like to keep the changes you’ve made to that file but still need 
 
 `git remote` gives the remote rep called often `origin`. Use `-v` to see more info.
 
-`git fetch origin` fetches any new work that has been pushed to that server since you cloned (or last fetched from) it. It’s important to note that the git fetch command only downloads the data to your local repository
+`git fetch origin` fetches any new work that has been pushed to that server since you cloned (or last fetched from) it. It’s important to note that the git fetch command only downloads the data to your local repository.
 
 `git pull` generally fetches data from the server you originally cloned from and automatically tries to merge it into the code you’re currently working on.
 
