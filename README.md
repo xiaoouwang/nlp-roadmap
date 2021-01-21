@@ -1,5 +1,13 @@
 # nlp-roadmap
 
+## Math
+
+### Calculus
+
+### Linear Algebra
+
+### Probability
+
 ## Machine Learning
 
 ### Theory
