@@ -1,3 +1,7 @@
+# A serious guide to git
+
+This documment is created because very few tutorials on Internet give a thorough introduction to `git`, instead a lot of homogeneous 10-minutes quick introductions are offeded. Then people just wonder around `stackoverflow` to solve _mysterious problems_. This is approach can appear to be easy at the beginning but quickly unsustainable. This is the V1 of a "hard" introduction that gives you a complete working knowledge of `git`. It's heavily inspired by the `pro git` book available [here](https://git-scm.com/book/en/v2).
+
 ## General
 
 - install : https://git-scm.com/download/
@@ -66,6 +70,33 @@ This is the lifecycle of the status of your files.
 
 ![](img/pro_git/2021-01-21-20-39-55.png)
 
-## Step back
+## Push
 
-- remove files
+Run `git show-ref` to see the name after `refs/heads/`. Sometimes it's `master` sometimes it's `main`. See [here](https://stackoverflow.com/questions/4181861/message-src-refspec-master-does-not-match-any-when-pushing-commits-in-git). Accordingly, you should `git push origin master/main`.
+
+## Step back in your git workspace
+
+- remove files from Git after staging or committing
+
+use `git rm file
+
+- remove the files in Git but not on your hard disk, very useful 👍
+  `git rm --cached file`
+
+- rename a file `git mv`, otherwise you would need to do
+
+```bash
+mv a.md b.md
+git rm a.md # to remove a.md in git
+git add b.md # to stage a
+```
+
+## Follow/log
+
+Use `git log` to see a commit history. Use `-2` to see only 2 most recent log. `-p` to see diff information. Also see `--pretty=oneline`. But a more straightforward way is to use a `GUI`. Seriously, it can be useful when it comes to branches and merging.
+
+## Undo things
+
+`git commit --amend` is used when you want to change the commit message and don't want to spam the commit space.
+
+
