@@ -97,6 +97,32 @@ Use `git log` to see a commit history. Use `-2` to see only 2 most recent log. `
 
 ## Undo things
 
-`git commit --amend` is used when you want to change the commit message and don't want to spam the commit space.
+### change commit message
 
+`git commit --amend` is used when you want to change the previous commit message and don't want to clutter the commit space with tons of useless messages. Only amend commits that are still local and have not been pushed somewhere.
 
+❗️ Amending previously pushed commits and force pushing the branch will cause problems for your collaborators.
+
+### unstage
+
+For example, let’s say you’ve changed two files and want to commit them as two separate changes, but you accidentally type git add \* and stage them both.
+
+`git reset HEAD --` or `git restore --staged file`
+
+### Back to the last commit state, danger part
+
+`git restore` `git checkout -- file`
+
+:x: Don't use this unless you know what you are doing since change would be lost forever.
+
+If you would like to keep the changes you’ve made to that file but still need to get it out of the way for now, Use `stashing` and `branching`.
+
+## remote
+
+`git remote` gives the remote rep called often `origin`. Use `-v` to see more info.
+
+`git fetch origin` fetches any new work that has been pushed to that server since you cloned (or last fetched from) it. It’s important to note that the git fetch command only downloads the data to your local repository
+
+`git pull` generally fetches data from the server you originally cloned from and automatically tries to merge it into the code you’re currently working on.
+
+## Branching
