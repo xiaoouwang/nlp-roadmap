@@ -1,4 +1,4 @@
-# A serious guide to git
+# A serious guide to git, v1
 
 This documment is created because very few tutorials on Internet give a thorough introduction to `git`, instead a lot of homogeneous 10-minutes quick introductions are offeded. Then people just wonder around `stackoverflow` to solve _mysterious problems_. This is approach can appear to be easy at the beginning but quickly unsustainable. This is the V1 of a "hard" introduction that gives you a complete working knowledge of `git`. It's heavily inspired by the `pro git` book available [here](https://git-scm.com/book/en/v2).
 
